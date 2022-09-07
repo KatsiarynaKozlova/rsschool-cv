@@ -21,7 +21,7 @@ I am a second-year student of Vitebsk State University. I am a dedicated and har
 
 ```
 function multiply(a, b){
-  a * b
+  return a * b
 }
 ```
     
