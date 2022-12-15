@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>CV</title>
+</head>
+<body>
+    <header>    
+        <nav id="nav_menu">
+            <ul class="in_line">
+                <li class="elem_nav"><a href="#about">About Me</a></li>
+                <li class="elem_nav"><a href="#contacts">Contacts</a></li>        
+                <li class="elem_nav"><a href="#skills">Skills</a></li>
+                <li class="elem_nav"><a href="#example">Code Examples</a></li>
+                <li class="elem_nav"><a href="#courses">Courses</a></li>
+                <li class="elem_nav"><a href="#projects">Projects</a></li>
+                <li class="elem_nav"><a href="#education">Education</a></li>
+                <li class="elem_nav"><a href="#engl">English</a></li>
+            </ul>
+        </nav>
+    </header>
+<main> 
+    <section class="conteiner" id="about">
+        <img class="photo" src="./assets/photo.jpg" alt="my photo" width="300">
+        <div>
+            <h1>Katsiaryna Kozlova</h1>
+            <p> Nice to meet You!</p>
+            <p>
+                I am a second-year student of Vitebsk State University. I am a dedicated and hard-working person. I am interested in learning and development.
+            </p>
+            <p>
+                I want to try diferent fields of IT, find something to my liking and also want to try my skills at web technologies
+            </p>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <ul class="list_contacts">
+            <li><b>Location:</b> Vitebsk, Republic of Belarus</li>
+            <li><b>Email:</b> <a href="kateworktime@gmail.com">kateworktime@gmail.com</a></li>
+            <li><b>GitHub:</b><a href="https://github.com/KatsiarynaKozlova"> KatsiarynaKozlova</a></li>
+        </ul>
+    </section>
+    <div class="conteiner_2">
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="list_contacts">
+                <li>Git version control</li>
+                <li>Web-development - HTML, CSS, Javascript - in progress</li>
+                <li>Machine learning and computer vision - Python, TensorFlow, Keras, Jupyter Notebook</li>
+                <li>Other - C++, FASM(Assembly)</li>
+            </ul>
+        </section>
+        <section class="" id="courses">
+            <h2>Courses</h2>
+            <ul class="list_contacts">
+                <li><a href="https://rs.school/js-stage0/">RSSCHOOL - JavaScript/Front-end. Stage 0</a></li>
+                <li><a href="https://stepik.org/course/58852/syllabus">Stepik - BEEGEEK school - "Поколение Python"</a></li>
+                <li>and others</li>
+            </ul>
+        </section>
+    </div>
+    <section id="example">
+        <h2>Code example <a href="https://www.codewars.com/kata/596f72bbe7cd7296d1000029">( Array Deep Count)</a></h2>
+        <div class="codee">
+            <pre >
+                <code>
+                    const deep =(a)=&gt;{
+                        let res = a.length
+                            for( let i = 0; i &lt; a.length; i+=1){
+                            if (Array.isArray(a[i])){ 
+                              console.log(a[i])
+                              res= res  +  deep(a[i]) 
+                            }  
+                        }
+                        return res
+                    }
+                      
+                    function deepCount(a){
+                        return deep(a)
+                    }
+                </code>
+            </pre>
+        </div>
+    </section>
+    <div class="conteiner_3">
+        <section class="" id="projects">
+            <h2>Projects</h2>
+            <ul class="list_contacts">
+                <li><a href="https://github.com/KatsiarynaKozlova/rsschool-cv/tree/main"> RSSCHOOL CV-PROJECT</a></li>
+                <li><a href="https://github.com/KatsiarynaKozlova/Hackathon-medicine-project">Hackaton Medicine Project</a> </li>
+            </ul>
+        </section>
+        <section class="" id="education">
+            <h2>Education</h2>
+            <p>Vitebsk State University named after P.M.Masherov</p>  
+        </section>
+        <section id="engl">
+            <h2>English</h2>
+            <p>English - A1</p>
+        </section>
+    </div>
+</main>
+<footer>
+    <div id="foot">
+        <ul class="in_line"> 
+            <li class="elem_nav"><a href="https://rs.school/js/"><img src='./assets/rs_school_js.svg' height="40" alt="logo_rsschool"></a></li>
+            <li class="elem_nav">@2022</li>
+            <li class="elem_nav"><a href="https://github.com/KatsiarynaKozlova"> My Github</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
